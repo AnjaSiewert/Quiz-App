@@ -7,6 +7,12 @@ body {
   font-family: Verdana, sans-serif;
 }
 
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -19,10 +25,18 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   border: 5px solid black;
+  height: 200px;
+  width: 400px;
+  margin-top: 10%;
+  position: relative;
 }
 
 .divbuttonhash {
   display: flex;
   gap: 10px;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
 }
