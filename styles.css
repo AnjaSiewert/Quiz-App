@@ -1,3 +1,7 @@
+* {
+  box-sizing: box-sizing;
+}
+
 header {
   display: flex;
   justify-content: center;
