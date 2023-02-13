@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Verdana, sans-serif;
-  background-color: rgb(42, 57, 57);
+  background-color: rgb(161, 198, 198);
 }
 
 .main-index {
@@ -22,6 +22,7 @@ header {
   border: 2px solid black;
   background-color: rgb(18, 187, 133);
   margin-bottom: 20px;
+  width: 100vw;
 }
 
 .question {
@@ -68,7 +69,7 @@ ul {
 footer {
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 100vw;
 }
 img[alt="profile icon"] {
   height: 35px;
