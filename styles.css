@@ -68,3 +68,8 @@ footer {
   bottom: 0;
   width: 100%;
 }
+img[alt="profile icon"] {
+  height: 35px;
+  position: relative;
+  top: 4px;
+}
