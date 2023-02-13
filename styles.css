@@ -73,3 +73,8 @@ img[alt="profile icon"] {
   position: relative;
   top: 4px;
 }
+
+article {
+  background-color: aquamarine;
+  border-radius: 4%;
+}
