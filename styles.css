@@ -52,10 +52,11 @@ li {
   justify-content: center;
   border: 5px solid black;
   height: 30vw;
-  width: 60vw;
+  width: 50vw;
   margin-top: 10%;
   background-color: var(--green);
-  border-radius: 4%;
+  border-radius: 5vw;
+  filter: drop-shadow(1vw 1vw 2vw var(--turquoise));
   position: relative;
 }
 
