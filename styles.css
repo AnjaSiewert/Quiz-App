@@ -48,12 +48,11 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   border: 5px solid black;
   height: 250px;
   width: 400px;
   margin-top: 10%;
-  background-color: var(--beige);
+  background-color: rgb(241, 230, 230);
   border-radius: 51px;
   filter: drop-shadow(1vw 1vw 2vw var(--turquoise));
   position: relative;
@@ -79,14 +78,14 @@ li {
 
 .Card__Hashtag {
   border: 2px solid black;
-  background-color: var(--grey);
+  background-color: var(--green);
   border-radius: 5px;
   font-size: small;
   width: 70px;
 }
 .Card__button {
   border-radius: 9px;
-  background-color: var(--green);
+  background-color: var(--turquoise);
   width: 200px;
   height: 40px;
   font-weight: bold;
@@ -105,11 +104,11 @@ li {
   border-radius: 100%;
 }
 
-/*img[alt="profile icon"] {
+img[alt="profile icon"] {
   height: 35px;
   position: relative;
   top: 4px;
-}*/
+}
 
 .dark {
   background-color: rgb(50, 51, 58);
