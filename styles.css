@@ -96,3 +96,7 @@ article {
   border: 2px solid black;
   border-radius: 100%;
 }
+.dark {
+  background-color: rgb(50, 51, 58);
+  color: white;
+}
