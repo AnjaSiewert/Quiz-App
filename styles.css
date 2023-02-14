@@ -82,11 +82,11 @@ footer {
   border-radius: 100%;
 }
 
-img[alt="profile icon"] {
+/*img[alt="profile icon"] {
   height: 35px;
   position: relative;
   top: 4px;
-}
+}*/
 
 .dark {
   background-color: rgb(50, 51, 58);
