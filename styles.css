@@ -29,7 +29,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 10vw;
 }
 
 li {
@@ -51,12 +51,12 @@ li {
   align-items: center;
   justify-content: center;
   border: 5px solid black;
-  height: 200px;
-  width: 400px;
+  height: 30vw;
+  width: 60vw;
   margin-top: 10%;
-  position: relative;
   background-color: var(--green);
   border-radius: 4%;
+  position: relative;
 }
 
 .Card__bookmark {
