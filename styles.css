@@ -16,6 +16,7 @@ body {
   font-family: Verdana, sans-serif;
   background-color: var(--blue);
 }
+
 header {
   background-color: var(--turquoise);
   border: 2px solid black;
@@ -52,6 +53,8 @@ footer {
   width: 400px;
   margin-top: 10%;
   position: relative;
+  background-color: var(--green);
+  border-radius: 4%;
 }
 
 .Card__bookmark {
@@ -67,17 +70,6 @@ footer {
   background-color: var(--beige);
 }
 
-img[alt="profile icon"] {
-  height: 35px;
-  position: relative;
-  top: 4px;
-}
-
-article {
-  background-color: var(--green);
-  border-radius: 4%;
-}
-
 .Profile {
   display: flex;
   justify-content: space-evenly;
@@ -88,6 +80,12 @@ article {
 .Profile__Picture {
   border: 2px solid black;
   border-radius: 100%;
+}
+
+img[alt="profile icon"] {
+  height: 35px;
+  position: relative;
+  top: 4px;
 }
 
 .dark {
