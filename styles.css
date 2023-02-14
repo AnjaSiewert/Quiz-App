@@ -37,7 +37,7 @@ header {
   position: relative;
 }
 
-.divbuttonhash {
+.List {
   display: flex;
   gap: 10px;
   position: absolute;
@@ -80,9 +80,6 @@ img[alt="profile icon"] {
 article {
   background-color: aquamarine;
   border-radius: 4%;
-}
-
-.button-showanswer {
 }
 
 .section1-profile {
