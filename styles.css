@@ -23,7 +23,7 @@ header {
   width: 100vw;
 }
 
-.main-index {
+main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,10 +48,6 @@ header {
   position: absolute;
   bottom: 5px;
   left: 5px;
-}
-
-fieldset {
-  border: none;
 }
 
 .Card__bookmark {
