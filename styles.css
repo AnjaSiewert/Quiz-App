@@ -9,12 +9,18 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   padding: 0;
   font-family: Verdana, sans-serif;
-  /*background-color: rgb(161, 198, 198);*/
   background-color: var(--blue);
+}
+header {
+  background-color: var(--turquoise);
+  border: 2px solid black;
+  text-align: center;
+  width: 100vw;
 }
 
 .main-index {
@@ -22,16 +28,6 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 100px;
-}
-
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid black;
-  background-color: var(--turquoise);
-  margin-bottom: 20px;
-  width: 100vw;
 }
 
 .Card {
