@@ -49,9 +49,9 @@ fieldset {
   border: none;
 }
 
-.bookmark {
+.Card__bookmark {
   position: relative;
-  top: -55%;
+  top: -40%;
   left: 45%;
 }
 
