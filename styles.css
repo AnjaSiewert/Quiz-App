@@ -50,11 +50,11 @@ li {
   align-items: center;
   justify-content: center;
   border: 5px solid black;
-  height: 20vw;
-  width: 30vw;
+  height: 250px;
+  width: 400px;
   margin-top: 10%;
-  background-color: var(--green);
-  border-radius: 5vw;
+  background-color: var(--beige);
+  border-radius: 51px;
   filter: drop-shadow(1vw 1vw 2vw var(--turquoise));
   position: relative;
 }
@@ -80,10 +80,17 @@ li {
 .Card__Hashtag {
   border: 2px solid black;
   background-color: var(--grey);
-  border-radius: 5vw;
+  border-radius: 5px;
   font-size: small;
-  width: 5vw;
-  padding-left: 0.3vw;
+  width: 70px;
+}
+.Card__button {
+  border-radius: 9px;
+  background-color: var(--green);
+  width: 200px;
+  height: 40px;
+  font-weight: bold;
+  font-size: 25px;
 }
 
 .Profile {
