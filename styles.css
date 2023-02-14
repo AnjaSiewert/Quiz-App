@@ -36,7 +36,9 @@ li {
   list-style: none;
 }
 
-footer {
+.footer {
+  display: flex;
+  justify-content: space-around;
   position: fixed;
   bottom: 0;
   width: 100vw;
