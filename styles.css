@@ -60,6 +60,10 @@ li {
   position: relative;
 }
 
+.Card:hover {
+  transform: scale(1.03);
+}
+
 .Card__bookmark {
   position: relative;
   top: -40%;
