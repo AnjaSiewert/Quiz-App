@@ -42,9 +42,10 @@ li {
   bottom: 0;
   width: 100vw;
   background-color: var(--turquoise);
+  scroll-behavior: smooth;
 }
 
-.Card {
+.card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,17 +59,17 @@ li {
   position: relative;
 }
 
-.Card:hover {
+.card:hover {
   transform: scale(1.03);
 }
 
-.Card__bookmark {
+.card__bookmark {
   position: relative;
   top: -30%;
   left: 40%;
 }
 
-.Card__HashtagList {
+.card__hashtagList {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -76,14 +77,14 @@ li {
   gap: 10px;
 }
 
-.Card__Hashtag {
+.card__hashtag {
   border: 2px solid black;
   background-color: var(--green);
   border-radius: 5px;
   font-size: small;
   width: 70px;
 }
-.Card__button {
+.card__button {
   border-radius: 9px;
   background-color: var(--turquoise);
   width: 200px;
@@ -92,14 +93,14 @@ li {
   font-size: 25px;
 }
 
-.Profile {
+.profile {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 80%;
 }
 
-.Profile__Picture {
+.profile__picture {
   border: 2px solid black;
   border-radius: 100%;
 }
