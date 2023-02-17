@@ -1,0 +1,49 @@
+@import "/components/styles.css";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid black;
+  height: 250px;
+  width: 400px;
+  margin-top: 10%;
+  background-color: rgb(241, 230, 230);
+  border-radius: 51px;
+  filter: drop-shadow(1vw 1vw 2vw var(--turquoise));
+  position: relative;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card__bookmark {
+  position: relative;
+  top: -30%;
+  left: 40%;
+}
+
+.card__hashtagList {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.card__hashtag {
+  border: 2px solid black;
+  background-color: var(--green);
+  border-radius: 5px;
+  font-size: small;
+  width: 70px;
+}
+.card__button {
+  border-radius: 9px;
+  background-color: var(--turquoise);
+  width: 200px;
+  height: 40px;
+  font-weight: bold;
+  font-size: 25px;
+}
