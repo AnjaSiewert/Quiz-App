@@ -33,6 +33,32 @@
 }
 
 .profile__aboutme-header {
+  width: 80%;
   text-decoration: underline;
   margin-top: 2rem;
+  text-align: left;
+}
+
+.profile__settings {
+  position: relative;
+  left: -7rem;
+  text-decoration: underline;
+  margin-top: 2rem;
+}
+
+.button {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.toggle-button {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.toggle-button__darkmode {
+  height: 1.5rem;
 }
