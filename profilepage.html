@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="components/styles.css" />
+    <link rel="stylesheet" href="components/card.css" />
+    <link rel="stylesheet" href="components/footer.css" />
+    <link rel="stylesheet" href="components/button.css">
+    <link rel="stylesheet" href="components/profile.css">
+    <script src="index.js" defer></script>
+    <title>Profile</title>
+  </head>
+  <body>
+  <header>
+    <h1>Quiz App</h1>
+  </header>
+  <main data-js="main">
+    <section class="profile">
+        <img
+          class="profile__picture"
+          src="images/4N8A6015_bearbeitet.png"
+          alt="profilepicture"
+          width="180px;"
+        />
+        <h1 class="profile__name">Anja Siewert</h1>
+      </section>
+<section class="profile">
+  <h2 class="profile__aboutme-header">About me</h2>
+  <p class="profile__aboutme-text">Hello my name is Anja</p>
+</section>
+<section class="button"></section>
+  <button class="button__counter-questions" type="button" data-js="button-questions">Questions</button>
+  <button class="button__counter-bookmarks" type="button" data-js="Button__Counter-bookmarks">bookmarks</button>
+<section class="settings">
+    <p>Settings</p>
+</section>
+<section class="toggle-button">
+    <button class="toggle-button__darkmode" type="button" data-js="button-darkmode">Dark mode</button>
+</section>
+  </main>
+  <footer>
+    <ul id="nav-bar" class="footer">
+      <li><a class="footer__link" href="index.html" aria-label="back to home screen"><img src="images/home.svg" alt="home icon" height="40rem"></a></li>
+      <li><a class="footer__link"href="bookmarks.html" aria-label="go to bookmarks" ><img src="images/bookmark.svg" alt="bookmark icon" height="40rem"></a></a></li>
+      <li><a class="footer__link"href="profilepage.html" aria-label="go to profile page"><img src="images/account-circle.svg" alt="profile icon" height="40rem"></a></a></li>
+    </ul>
+  </footer>
+</body>
+</html>

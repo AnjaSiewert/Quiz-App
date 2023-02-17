@@ -1,0 +1,11 @@
+@import "/components/styles.css";
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: -1rem;
+  width: 100vw;
+  background-color: var(--turquoise);
+  scroll-behavior: smooth;
+}

@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="components/styles.css" />
+    <link rel="stylesheet" href="components/card.css" />
+    <link rel="stylesheet" href="components/footer.css" />
+    <link rel="stylesheet" href="components/button.css">
+    <link rel="stylesheet" href="components/profile.css">
+    <script src="index.js" defer></script>
     <title>Quiz App</title>
   </head>
   <body>
@@ -12,35 +17,62 @@
       <h1>Quiz App</h1>
     </header>
     <main>
-      <fieldset>
-        <article class="question">
+        <article class="card">
           <h2>Question 1</h2>
-          <div class="bookmark">🤓</div>
-          <button class="button-showanswer">Show Answer</button>
-          <div class="divbuttonhash">
-            <button class="buttonhash" type="button">#html</button>
-            <button class="buttonhash" type="button">#flexbox</button>
-            <button class="buttonhash" type="button">#css</button>
-          </div>
+          <img class="card__bookmark" src="./images/bookmark.svg" width="64px" height="64px">
+          <button class="card__button">Show Answer</button>
+          <ul class="card__hashtagList">
+            <li class="card__hashtag card--html">#html</li>
+            <li class="card__hashtag card--flexbox">#flexbox</li>
+            <li class="card__hashtag card--css">#css</li>
+          </ul>
         </article>
-        <article class="question">
+        <article class="card">
           <h2>Question 2</h2>
-          <div class="bookmark">🤓</div>
-          <button class="button-showanswer">Show Answer</button>
-          <div class="divbuttonhash">
-            <button class="buttonhash" type="button">#html</button>
-            <button class="buttonhash" type="button">#flexbox</button>
-            <button class="buttonhash" type="button">#css</button>
-          </div>
+          <img class="card__bookmark" src="./images/bookmark.svg" width="64px" height="64px">
+          <button class="card__button">Show Answer</button>
+          <ul class="card__hashtagList">
+            <li class="card__hashtag card--html">#html</li>
+            <li class="card__hashtag card--flexbox">#flexbox</li>
+            <li class="card__hashtag card--css">#css</li>
+          </ul>
         </article>
-      </fieldset>
+        <article class="card">
+          <h2>Question 3</h2>
+          <img class="card__bookmark" src="./images/bookmark.svg" width="64px" height="64px">
+          <button class="card__button">Show Answer</button>
+          <ul class="card__hashtagList">
+            <li class="card__hashtag card--html">#html</li>
+            <li class="card__hashtag card--flexbox">#flexbox</li>
+            <li class="card__hashtag card--css">#css</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>Question 4</h2>
+          <img class="card__bookmark" src="./images/bookmark.svg" width="64px" height="64px">
+          <button class="card__button">Show Answer</button>
+          <ul class="card__hashtagList">
+            <li class="card__hashtag card--html">#html</li>
+            <li class="card__hashtag card--flexbox">#flexbox</li>
+            <li class="card__hashtag card--css">#css</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>Question 5</h2>
+          <img class="card__bookmark" src="./images/bookmark.svg" width="64px" height="64px">
+          <button class="card__button">Show Answer</button>
+          <ul class="card__hashtagList">
+            <li class="card__hashtag card--html">#html</li>
+            <li class="card__hashtag card--flexbox">#flexbox</li>
+            <li class="card__hashtag card--css">#css</li>
+          </ul>
+        </article>
     </main>
     <footer>
-      <ul id="nav-bar">
-        <li><a href="index.html" aria-label="back to home screen"><img src="images/home.png" alt="home icon" height="40px"></a></li>
-        <li><a href="bookmarks.html" aria-label="go to bookmarks" ><img src="images/bookmark.png" alt="bookmark icon" height="40px"></a></a></li>
-        <li><a href="profilepage.html" aria-label="go to profile page"><img src="images/profile_page.png" alt="profile icon" height="40px"></a></a></li>
-      </ul>
+    <ul id="nav-bar" class="footer">
+      <li><a class="footer__link" href="index.html" aria-label="back to home screen"><img src="images/home.svg" alt="home icon" height="40rem"></a></li>
+      <li><a class="footer__link"href="bookmarks.html" aria-label="go to bookmarks" ><img src="images/bookmark.svg" alt="bookmark icon" height="40rem"></a></a></li>
+      <li><a class="footer__link"href="profilepage.html" aria-label="go to profile page"><img src="images/account-circle.svg" alt="profile icon" height="40rem"></a></a></li>
     </footer>
   </body>
 </html>
