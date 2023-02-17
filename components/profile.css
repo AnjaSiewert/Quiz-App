@@ -25,3 +25,14 @@
     gap: 50px;
   }
 }
+
+.profile__aboutme {
+  width: 80%;
+  text-align: left;
+  margin-bottom: 1.2rem;
+}
+
+.profile__aboutme-header {
+  text-decoration: underline;
+  margin-top: 2rem;
+}
