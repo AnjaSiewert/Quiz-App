@@ -3,11 +3,12 @@
 .card {
   display: flex;
   flex-direction: column;
+  _justify-content: space-between;
   align-items: center;
-  border: 5px solid black;
-  height: 250px;
-  width: 400px;
-  margin-top: 10%;
+  border: 0.35rem solid black;
+  height: 10rem;
+  width: 18rem;
+  margin-top: 4%;
   background-color: rgb(241, 230, 230);
   border-radius: 51px;
   filter: drop-shadow(1vw 1vw 2vw var(--turquoise));
@@ -20,8 +21,9 @@
 
 .card__bookmark {
   position: relative;
-  top: -6rem;
-  left: 8.5rem;
+  top: -5.5rem;
+  left: 6.5rem;
+  height: 50px;
 }
 
 .card__hashtagList {
@@ -42,8 +44,10 @@
 .card__button {
   border-radius: 9px;
   background-color: var(--turquoise);
-  width: 200px;
+  width: 11rem;
   height: 40px;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 1.1rem;
+  position: relative;
+  top: -3rem;
 }
