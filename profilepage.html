@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-js="html" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,11 +12,11 @@
     <script src="index.js" defer></script>
     <title>Profile</title>
   </head>
-  <body>
-  <header>
+  <body data-js="body">
+  <header data-js="header">
     <h1>Quiz App</h1>
   </header>
-  <main data-js="main">
+  <main>
     <section class="profile">
         <img
           class="profile__picture"
@@ -36,11 +36,11 @@
   <section class="settings">
     <h3 class="profile__settings">Settings</h3>
     <input class="toggle__checkbox" type="checkbox" id="darkmode-toggle">
-    <label class="toggle__switch" for="darkmode-toggle"></label>
+    <label class="toggle__switch" for="darkmode-toggle" data-js="toggle"></label>
     <p>Dark mode</p>
 </section>
   </main>
-  <footer>
+  <footer data-js="footer">
     <ul id="nav-bar" class="footer">
       <li><a class="footer__link" href="index.html" aria-label="back to home screen"><img src="images/home.svg" alt="home icon" height="40rem"></a></li>
       <li><a class="footer__link"href="bookmarks.html" aria-label="go to bookmarks" ><img src="images/bookmark.svg" alt="bookmark icon" height="40rem"></a></a></li>

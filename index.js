@@ -1,6 +1,10 @@
-const mainElement = document.querySelector('[data-js="main"]');
-const buttonDarkMode = document.querySelector('[data-js="button-darkmode"]');
+const headerElement = document.querySelector('[data-js="header"]');
+const bodyElement = document.querySelector('[data-js="body"]');
+const footerElement = document.querySelector('[data-js="footer"]');
+const buttonDarkMode = document.querySelector('[data-js="toggle"]');
 
 buttonDarkMode.addEventListener("click", () => {
-  mainElement.classList.toggle("dark");
+  headerElement.classList.toggle("dark");
+  bodyElement.classList.toggle("dark");
+  footerElement.classList.toggle("dark");
 });
