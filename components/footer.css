@@ -1,5 +1,3 @@
-@import "/components/styles.css";
-
 .footer {
   display: flex;
   justify-content: space-around;
@@ -8,4 +6,9 @@
   width: 100vw;
   background-color: var(--turquoise);
   scroll-behavior: smooth;
+  border-top: 2px solid var(--black);
+}
+
+.footer__bookmark {
+  background-color: var(--turquoise-img);
 }

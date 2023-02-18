@@ -1,15 +1,13 @@
-@import "/components/styles.css";
-
 .card {
   display: flex;
   flex-direction: column;
-  _justify-content: space-between;
+  justify-content: space-between;
   align-items: center;
-  border: 0.35rem solid black;
-  height: 10rem;
+  border: 0.35rem solid var(--black);
+  height: 12rem;
   width: 18rem;
   margin-top: 4%;
-  background-color: rgb(241, 230, 230);
+  background-color: var(--bg-card);
   border-radius: 51px;
   filter: drop-shadow(1vw 1vw 2vw var(--turquoise));
   position: relative;
@@ -21,9 +19,13 @@
 
 .card__bookmark {
   position: relative;
-  top: -5.5rem;
+  top: -6rem;
   left: 6.5rem;
   height: 50px;
+}
+
+.card__question {
+  text-align: center;
 }
 
 .card__hashtagList {
@@ -35,7 +37,7 @@
 }
 
 .card__hashtag {
-  border: 2px solid black;
+  border: 2px solid var(--black);
   background-color: var(--lightgreen);
   border-radius: 4px;
   font-size: 0.7rem;

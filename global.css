@@ -1,0 +1,46 @@
+:root {
+  --lightgreen: #dfefd4;
+  --turquoise: #81bbc4;
+  --turquoise-img: #81bbc5;
+  --grey: #6f8d9f;
+  --beige: #fbe6a6;
+  --blue: #3f7d87;
+  --black: #000;
+  --white: #fff;
+  --bg-card: rgb(241, 230, 230);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.dark {
+  color: white;
+  --turquoise: rgb(50, 51, 58);
+  --lightgreen: white;
+  --turquoise-img: white;
+  --lightgreen: rgb(50, 51, 58);
+  --black: white;
+  --white: rgb(50, 51, 58);
+  --grey: white;
+  --beige: beige;
+  --blue: rgb(50, 51, 58);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  hyphens: auto;
+}

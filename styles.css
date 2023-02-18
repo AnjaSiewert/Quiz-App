@@ -1,20 +1,8 @@
-/*
-- Add margin above footer
-- add styling to profile
-  - img margin top
-*/
-
-:root {
-  --lightgreen: #dfefd4;
-  --turquoise: #81bbc4;
-  --grey: #6f8d9f;
-  --beige: #fbe6a6;
-  --blue: #3f7d87;
-}
-
-* {
-  box-sizing: border-box;
-}
+@import "global.css";
+@import "components/button.css";
+@import "components/card.css";
+@import "components/footer.css";
+@import "components/profile.css";
 
 body {
   margin: 0;
@@ -25,7 +13,7 @@ body {
 
 header {
   background-color: var(--turquoise);
-  border: 2px solid black;
+  border: 2px solid var(--black);
   text-align: center;
   width: 100vw;
 }
@@ -39,9 +27,4 @@ main {
 
 li {
   list-style: none;
-}
-
-.dark {
-  background-color: rgb(50, 51, 58);
-  color: white;
 }
