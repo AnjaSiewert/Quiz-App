@@ -10,7 +10,9 @@
   --bg-card: rgb(241, 230, 230);
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -25,4 +27,20 @@
   --grey: white;
   --beige: beige;
   --blue: rgb(50, 51, 58);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
