@@ -1,7 +1,7 @@
 :root {
   --lightgreen: #dfefd4;
   --turquoise: #81bbc4;
-  --turquoise-img: #81bbc5;
+  --blue-img: #3f7d87;
   --grey: #6f8d9f;
   --beige: #fbe6a6;
   --blue: #3f7d87;
@@ -20,7 +20,7 @@
   color: white;
   --turquoise: rgb(50, 51, 58);
   --lightgreen: white;
-  --turquoise-img: white;
+  --blue-img: white;
   --lightgreen: rgb(50, 51, 58);
   --black: white;
   --white: rgb(50, 51, 58);
