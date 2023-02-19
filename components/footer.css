@@ -4,11 +4,11 @@
   position: fixed;
   bottom: -1rem;
   width: 100vw;
-  background-color: var(--turquoise);
+  background-color: var(--blue);
   scroll-behavior: smooth;
   border-top: 2px solid var(--black);
 }
 
 .footer__bookmark {
-  background-color: var(--turquoise-img);
+  background-color: var(--blue-img);
 }
