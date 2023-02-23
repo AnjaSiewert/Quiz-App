@@ -1,7 +1,7 @@
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   border: 0.35rem solid var(--black);
   height: 12rem;
@@ -10,7 +10,6 @@
   background-color: var(--bg-card);
   border-radius: 51px;
   filter: drop-shadow(1vw 1vw 2vw var(--turquoise));
-  position: relative;
 }
 
 .card:hover {
@@ -18,11 +17,12 @@
 }
 
 .card__bookmark {
-  position: relative;
-  top: -6.3rem;
-  left: 6.5rem;
-  height: 50px;
+  position: absolute;
+  top: -15px;
+  right: -40px;
   cursor: pointer;
+  width: 150px;
+  height: 40px;
 }
 
 .card__bookmark--clicked {
@@ -37,7 +37,7 @@
 }
 
 .card__hashtagList {
-  position: absolute;
+  align-self: flex-start;
   bottom: 0;
   left: -1.5rem;
   display: flex;
@@ -64,7 +64,14 @@
   height: 40px;
   font-weight: bold;
   font-size: 1.1rem;
-  position: relative;
   top: -3rem;
   cursor: pointer;
+}
+
+.card__answer {
+  top: -50px;
+}
+
+.card__answer--active {
+  display: none;
 }
