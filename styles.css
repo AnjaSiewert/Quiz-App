@@ -3,6 +3,7 @@
 @import "components/card.css";
 @import "components/footer.css";
 @import "components/profile.css";
+@import "components/form.css";
 
 body {
   margin: 0;

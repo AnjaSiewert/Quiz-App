@@ -6,7 +6,7 @@
   border: 0.35rem solid var(--black);
   height: 12rem;
   width: 18rem;
-  margin-top: 4%;
+  margin-top: 2%;
   background-color: var(--bg-card);
   border-radius: 51px;
   filter: drop-shadow(1vw 1vw 2vw var(--turquoise));
