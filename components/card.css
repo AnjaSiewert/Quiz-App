@@ -19,9 +19,15 @@
 
 .card__bookmark {
   position: relative;
-  top: -6rem;
+  top: -6.3rem;
   left: 6.5rem;
   height: 50px;
+}
+
+.card__bookmark--clicked {
+  fill: transparent;
+  stroke: black;
+  stroke-width: 1.5px;
 }
 
 .card__question {
