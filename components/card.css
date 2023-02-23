@@ -25,7 +25,7 @@
 }
 
 .card__bookmark--clicked {
-  fill: transparent;
+  fill: white;
   stroke: black;
   stroke-width: 1.5px;
 }
