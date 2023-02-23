@@ -22,12 +22,14 @@
   top: -6.3rem;
   left: 6.5rem;
   height: 50px;
+  cursor: pointer;
 }
 
 .card__bookmark--clicked {
   fill: white;
   stroke: black;
   stroke-width: 1.5px;
+  cursor: pointer;
 }
 
 .card__question {
@@ -64,4 +66,5 @@
   font-size: 1.1rem;
   position: relative;
   top: -3rem;
+  cursor: pointer;
 }
