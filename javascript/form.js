@@ -1,3 +1,7 @@
+/*Missing: 
+- Functionaltiy on new Card
+- Minlength function*/
+
 console.clear();
 
 const form = document.querySelector('[data-js="form"]');
@@ -7,12 +11,10 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   const formData = new FormData(event.target);
   const data = Object.fromEntries(formData);
-  console.log(data);
 
   const newCard = document.createElement("article");
   newCard.classList.add("card");
   const cardText = question.value;
-  console.log(cardText);
   const answerText = answer.value;
   newCard.innerHTML = `
   <h2>${cardText}</h2>
