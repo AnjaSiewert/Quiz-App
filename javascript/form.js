@@ -4,11 +4,14 @@
 
 console.clear();
 
-//Create new card
-
 const form = document.querySelector('[data-js="form"]');
 const mainElement = document.querySelector('[data-js="form_main"]');
+const questionInput = document.querySelector('[data-js="textarea-question"]');
+const questionLength = document.querySelector('[data-js="questionlength"]');
+const answerInput = document.querySelector('[data-js="textarea-answer"]');
+const answerLength = document.querySelector('[data-js="answerlength"]');
 
+//Create new card
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   const formData = new FormData(event.target);
@@ -31,20 +34,19 @@ form.addEventListener("submit", (event) => {
   mainElement.append(newCard);
 });
 
-// Minlength
-const textareaInput = document.querySelector('[data-js="textarea-question"]');
-textareaInput.addEventListener("input", (event) => {
-  showLength(event.target.value, event.target.value.minLength);
+// Minlength question
+questionInput.addEventListener("input", (event) => {
+  showTextareaLength(event.target.value, event.target.maxLength);
 });
 
-const formHint = document.querySelector('[data-js="formhint"]');
-function showLength(text, minlength) {
-  const inputHint = text.length;
-  if (inputHint < 1) {
-    inputHint.textContent = "";
-  } else if (inputHint < minlength) {
-    inputHint.textContent = `${inputHint} characters left`;
+function showTextareaLength(text, maxLength) {
+  const inputLength = text.length;
+  const caractersLeft = maxLength - inputLength;
+  if (inputLength < 1) {
+    questionLength.textContent = "";
+  } else if (inputLength < maxLength) {
+    questionLength.textContent = `${caractersLeft} characters left`;
   } else {
-    inputHint.textContent = "Only 150 characters allowed";
+    questionLength.textContent = "Only 150 characters allowed";
   }
 }
