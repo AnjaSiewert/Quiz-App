@@ -6,7 +6,7 @@
   border: 0.35rem solid var(--black);
   height: 12rem;
   width: 18rem;
-  margin-top: 4%;
+  margin-top: 2%;
   background-color: var(--bg-card);
   border-radius: 51px;
   filter: drop-shadow(1vw 1vw 2vw var(--turquoise));
@@ -18,7 +18,7 @@
 
 .card__bookmark {
   position: absolute;
-  top: -15px;
+  top: -18px;
   right: -40px;
   cursor: pointer;
   width: 150px;
@@ -60,16 +60,17 @@
 .card__button {
   border-radius: 9px;
   background-color: var(--turquoise);
-  width: 11rem;
-  height: 40px;
+  width: 9rem;
+  height: 30px;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   top: -3rem;
   cursor: pointer;
 }
 
 .card__answer {
   top: -50px;
+  text-align: center;
 }
 
 .card__answer--active {

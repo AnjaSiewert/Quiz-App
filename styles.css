@@ -3,6 +3,7 @@
 @import "components/card.css";
 @import "components/footer.css";
 @import "components/profile.css";
+@import "components/form.css";
 
 body {
   margin: 0;
@@ -23,6 +24,9 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+h2 {
+  font-size: 1rem;
 }
 
 li {
