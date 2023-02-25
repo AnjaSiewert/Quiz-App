@@ -25,6 +25,9 @@ main {
   justify-content: center;
   align-items: center;
 }
+h2 {
+  font-size: 1rem;
+}
 
 li {
   list-style: none;
