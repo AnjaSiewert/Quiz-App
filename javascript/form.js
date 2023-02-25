@@ -1,6 +1,6 @@
 /*Missing: 
 - Functionaltiy on new Card
-- Minlength function*/
+- Minlength function answer*/
 
 console.clear();
 
@@ -45,7 +45,7 @@ function showTextareaLength(text, maxLength) {
   if (inputLength < 1) {
     questionLength.textContent = "";
   } else if (inputLength < maxLength) {
-    questionLength.textContent = `${caractersLeft} characters left`;
+    questionLength.textContent = `${caractersLeft}/150 characters left`;
   } else {
     questionLength.textContent = "Only 150 characters allowed";
   }
