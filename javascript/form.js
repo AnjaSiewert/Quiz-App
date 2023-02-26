@@ -1,6 +1,5 @@
 /*Missing: 
-- Functionaltiy on new Card
-- Minlength function answer*/
+- Functionaltiy on new Card*/
 
 console.clear();
 
@@ -34,19 +33,27 @@ form.addEventListener("submit", (event) => {
   mainElement.append(newCard);
 });
 
-// Minlength question
+// Minlength display
 questionInput.addEventListener("input", (event) => {
-  showTextareaLength(event.target.value, event.target.maxLength);
+  showTextareaLength(
+    questionLength,
+    event.target.value,
+    event.target.maxLength
+  );
 });
 
-function showTextareaLength(text, maxLength) {
+answerInput.addEventListener("input", (event) => {
+  showTextareaLength(answerLength, event.target.value, event.target.maxLength);
+});
+
+function showTextareaLength(output, text, maxLength) {
   const inputLength = text.length;
   const caractersLeft = maxLength - inputLength;
   if (inputLength < 1) {
-    questionLength.textContent = "";
+    output.textContent = "";
   } else if (inputLength < maxLength) {
-    questionLength.textContent = `${caractersLeft}/150 characters left`;
+    output.textContent = `${caractersLeft}/150 characters left`;
   } else {
-    questionLength.textContent = "Only 150 characters allowed";
+    output.textContent = "Only 150 characters allowed";
   }
 }
