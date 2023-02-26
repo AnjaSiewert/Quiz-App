@@ -66,6 +66,11 @@
   font-size: 0.8rem;
   top: -3rem;
   cursor: pointer;
+  transition: 0.4 linear;
+}
+
+.card__button:hover {
+  transform: scale(1.2);
 }
 
 .card__answer {

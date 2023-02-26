@@ -1,5 +1,5 @@
 /*Missing: 
-- Functionaltiy on new Card*/
+- Functionalty on new Card*/
 
 console.clear();
 
@@ -30,10 +30,13 @@ form.addEventListener("submit", (event) => {
             <li class="card__hashtag card--flexbox">${tagText}</li>
           </ul>
   `;
+  form.reset();
+  questionInput.focus();
   mainElement.append(newCard);
 });
 
 // Minlength display
+
 questionInput.addEventListener("input", (event) => {
   showTextareaLength(
     questionLength,
