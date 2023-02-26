@@ -36,6 +36,7 @@ form.addEventListener("submit", (event) => {
 });
 
 // Minlength display
+
 questionInput.addEventListener("input", (event) => {
   showTextareaLength(
     questionLength,
