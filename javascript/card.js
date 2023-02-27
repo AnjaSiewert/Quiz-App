@@ -1,22 +1,15 @@
 //Bookmark click fill change
-const bookmark = document.querySelector('[data-js="card__bookmark"]');
-bookmark.addEventListener("click", (event) => {
-  event.target.classList.toggle("card__bookmark--clicked");
-});
 
-const bookmark2 = document.querySelector('[data-js="card__bookmark2"]');
-bookmark2.addEventListener("click", (event) => {
-  event.target.classList.toggle("card__bookmark--clicked");
-});
-
-const bookmark3 = document.querySelector('[data-js="card__bookmark3"]');
-bookmark3.addEventListener("click", (event) => {
-  event.target.classList.toggle("card__bookmark--clicked");
-});
-const bookmark4 = document.querySelector('[data-js="card__bookmark4"]');
-bookmark4.addEventListener("click", (event) => {
-  event.target.classList.toggle("card__bookmark--clicked");
-});
+function bookmarkChange() {
+  const bookmarks = document.querySelectorAll('[data-js="card__bookmark"]');
+  console.log(bookmarks);
+  bookmarks.forEach((bookmark) => {
+    bookmark.addEventListener("click", () => {
+      bookmark.classList.toggle("card__bookmark--clicked");
+    });
+  });
+}
+bookmarkChange();
 
 //Button show/hide answer + Hidden Answer
 
