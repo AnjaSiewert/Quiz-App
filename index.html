@@ -5,69 +5,195 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-  
-    <script src="/javascript/card.js" defer></script>
+    <script src="/components/Card/Card.js" defer></script>
     <title>Quiz App</title>
   </head>
   <body data-js="body">
-    <header>
+    <header data-js="header">
       <h1>Quiz App</h1>
-    </header data-js="header">
+    </header>
     <main>
-        <article class="card" data-js="card">
-          <h2>Who let the dogs out?</h2>
-          <svg class="card__bookmark" data-js="card__bookmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" heigth="64px" width="64px"><path d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z" /></svg>
-          <button type="button" class="card__button" data-showanswer="false" data-js="card__button" aria-label="show answer">Show Answer</button>
-          <p class="card__answer" data-js="answer" hidden>Who Who Who Who!?</p>
-          <ul class="card__hashtagList">
-            <li data-js="tag" class="card__hashtag card--html">#html</li>
-            <li class="card__hashtag card--flexbox">#flexbox</li>
-            <li class="card__hashtag card--css">#css</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h2 class="card__question">How much is the fish?</h2>
-          <svg class="card__bookmark" data-js="card__bookmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" heigth="94px" width="94px"><path d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z" /></svg>
-          <button type="button" class="card__button" data-showanswer="false" data-js="card__button2" aria-label="show answer">Show Answer</button>
-          <p class="card__answer" data-js="answer2" hidden>Hold your back for the rythym attack</p>
-          <ul class="card__hashtagList">
-            <li class="card__hashtag card--html" name="hashtag">#html</li>
-            <li class="card__hashtag card--flexbox" name="hashtag">#flexbox</li>
-            <li class="card__hashtag card--css" name="hashtag">#css</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h2>Was los digga ahnma'</h2>
-          <svg class="card__bookmark" data-js="card__bookmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" heigth="94px" width="94px"><path d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z" /></svg>
-          <button type="button" class="card__button" data-showanswer="false" data-js="card__button3" aria-label="show answer">Show Answer</button>
-          <p class="card__answer" data-js="answer3" hidden>Wie wir gucken, wie wir labern</p>
-          <ul class="card__hashtagList">
-            <li class="card__hashtag card--html">#html</li>
-            <li class="card__hashtag card--flexbox">#flexbox</li>
-            <li class="card__hashtag card--css">#css</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h2>Wer hat an der Uhr gedreht?</h2>
-          <svg class="card__bookmark" data-js="card__bookmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" heigth="94px" width="94px"><path d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z" /></svg>
-          <button type="button" class="card__button" data-showanswer="false" data-js="card__button4" aria-label="show answer">Show Answer</button>
-          <p class="card__answer" data-js="answer4" hidden>Ist es wirklich schon so spät?</p>
-          <ul class="card__hashtagList">
-            <li class="card__hashtag card--html">#html</li>
-            <li class="card__hashtag card--flexbox">#flexbox</li>
-            <li class="card__hashtag card--css">#css</li>
-          </ul>
-        </article>
+      <article class="card" data-js="card">
+        <h2>Who let the dogs out?</h2>
+        <svg
+          class="card__bookmark"
+          data-js="card__bookmark"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          heigth="64px"
+          width="64px"
+        >
+          <path
+            d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
+          />
+        </svg>
+        <button
+          type="button"
+          class="card__button"
+          data-showanswer="false"
+          data-js="card__button"
+          aria-label="show answer"
+        >
+          Show Answer
+        </button>
+        <p class="card__answer" data-js="answer" hidden>Who Who Who Who!?</p>
+        <ul class="card__hashtagList">
+          <li data-js="tag" class="card__hashtag card--html">#html</li>
+          <li class="card__hashtag card--flexbox">#flexbox</li>
+          <li class="card__hashtag card--css">#css</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h2 class="card__question">How much is the fish?</h2>
+        <svg
+          class="card__bookmark"
+          data-js="card__bookmark"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          heigth="94px"
+          width="94px"
+        >
+          <path
+            d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
+          />
+        </svg>
+        <button
+          type="button"
+          class="card__button"
+          data-showanswer="false"
+          data-js="card__button2"
+          aria-label="show answer"
+        >
+          Show Answer
+        </button>
+        <p class="card__answer" data-js="answer2" hidden>
+          Hold your back for the rythym attack
+        </p>
+        <ul class="card__hashtagList">
+          <li class="card__hashtag card--html" name="hashtag">#html</li>
+          <li class="card__hashtag card--flexbox" name="hashtag">#flexbox</li>
+          <li class="card__hashtag card--css" name="hashtag">#css</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h2>Was los digga ahnma'</h2>
+        <svg
+          class="card__bookmark"
+          data-js="card__bookmark"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          heigth="94px"
+          width="94px"
+        >
+          <path
+            d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
+          />
+        </svg>
+        <button
+          type="button"
+          class="card__button"
+          data-showanswer="false"
+          data-js="card__button3"
+          aria-label="show answer"
+        >
+          Show Answer
+        </button>
+        <p class="card__answer" data-js="answer3" hidden>
+          Wie wir gucken, wie wir labern
+        </p>
+        <ul class="card__hashtagList">
+          <li class="card__hashtag card--html">#html</li>
+          <li class="card__hashtag card--flexbox">#flexbox</li>
+          <li class="card__hashtag card--css">#css</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h2>Wer hat an der Uhr gedreht?</h2>
+        <svg
+          class="card__bookmark"
+          data-js="card__bookmark"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          heigth="94px"
+          width="94px"
+        >
+          <path
+            d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
+          />
+        </svg>
+        <button
+          type="button"
+          class="card__button"
+          data-showanswer="false"
+          data-js="card__button4"
+          aria-label="show answer"
+        >
+          Show Answer
+        </button>
+        <p class="card__answer" data-js="answer4" hidden>
+          Ist es wirklich schon so spät?
+        </p>
+        <ul class="card__hashtagList">
+          <li class="card__hashtag card--html">#html</li>
+          <li class="card__hashtag card--flexbox">#flexbox</li>
+          <li class="card__hashtag card--css">#css</li>
+        </ul>
+      </article>
     </main>
-    <br>
-    <br>
-    <br>
+    <br />
+    <br />
+    <br />
     <footer data-js="footer">
-    <ul id="nav-bar" class="footer">
-      <li><a class="footer__link" href="index.html" aria-label="back to home screen"><img class="footer__bookmark" src="images/home.svg" alt="home icon" height="40rem"></a></li>
-      <li><a class="footer__link"href="bookmarks.html" aria-label="go to bookmarks" ><img class="footer__bookmark" src="images/bookmark.svg" alt="bookmark icon" height="40rem"></a></a></li>
-      <li><a class="footer__link"href="form.html" aria-label="go to sumbit new form"><img class="footer__bookmark" src="images/plus-thick.svg" alt="submit icon" height="40rem"></a></a></li>
-      <li><a class="footer__link"href="profilepage.html" aria-label="go to profile page"><img class="footer__bookmark" src="images/account-circle.svg" alt="profile icon" height="40rem"></a></a></li>
+      <ul id="nav-bar" class="footer">
+        <li>
+          <a
+            class="footer__link"
+            href="index.html"
+            aria-label="back to home screen"
+            ><img
+              class="footer__bookmark"
+              src="images/home.svg"
+              alt="home icon"
+              height="40rem"
+          /></a>
+        </li>
+        <li>
+          <a
+            class="footer__link"
+            href="bookmarks.html"
+            aria-label="go to bookmarks"
+            ><img
+              class="footer__bookmark"
+              src="images/bookmark.svg"
+              alt="bookmark icon"
+              height="40rem"
+          /></a>
+        </li>
+        <li>
+          <a
+            class="footer__link"
+            href="form.html"
+            aria-label="go to sumbit new form"
+            ><img
+              class="footer__bookmark"
+              src="images/plus-thick.svg"
+              alt="submit icon"
+              height="40rem"
+          /></a>
+        </li>
+        <li>
+          <a
+            class="footer__link"
+            href="profilepage.html"
+            aria-label="go to profile page"
+            ><img
+              class="footer__bookmark"
+              src="images/account-circle.svg"
+              alt="profile icon"
+              height="40rem"
+          /></a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
