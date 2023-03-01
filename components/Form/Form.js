@@ -1,5 +1,6 @@
 /*Missing: 
 - Functionalty on new Card*/
+
 console.clear();
 
 const form = document.querySelector('[data-js="form"]');
@@ -32,7 +33,6 @@ function createNewCard() {
   `;
     form.reset();
     questionInput.focus();
-
     mainElement.append(newCard);
   });
 }
