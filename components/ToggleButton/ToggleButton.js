@@ -1,3 +1,4 @@
+
 function toggleButton() {
   const headerElement = document.querySelector('[data-js="header"]');
   const footerElement = document.querySelector('[data-js="footer"]');
