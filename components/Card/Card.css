@@ -52,11 +52,6 @@
   width: 4rem;
 }
 
-.card--html,
-.card--css {
-  width: 3rem;
-}
-
 .card__button {
   border-radius: 9px;
   background-color: var(--turquoise);
