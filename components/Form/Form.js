@@ -1,4 +1,4 @@
-import { bookmarkChange, showAndHideAnswers } from "../Card/Card.js";
+import { Card } from "../Card/Card.js";
 
 console.clear();
 
@@ -10,35 +10,17 @@ const answerInput = document.querySelector('[data-js="textarea-answer"]');
 const answerLength = document.querySelector('[data-js="answerlength"]');
 
 //Create new card
-/* function createCard() { */
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   const formData = new FormData(event.target);
   const data = Object.fromEntries(formData);
-
-  const newCard = document.createElement("article");
-  newCard.classList.add("card");
-  const cardText = question.value;
-  const answerText = answer.value;
-  const tagText = tag.value;
-  newCard.innerHTML = `
-  <h2>${cardText}</h2>
-    <svg class="card__bookmark" data-js="card__bookmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" heigth="64px" width="64px"><path d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z" /></svg>
-          <button type="button" class="card__button" data-showanswer="false" data-js="card__button" aria-label="show answer">Show Answer</button>
-          <p class="card__answer" data-js="answer1">${answerText}</p>
-          <ul class="card__hashtagList">
-            <li class="card__hashtag card--flexbox">${tagText}</li>
-          </ul>
-  `;
+  const questionContainer = document.querySelector(".containerNewCards");
+  const newCard = Card(data);
   form.reset();
   questionInput.focus();
-  //const bookmarks = document.querySelectorAll('[data-js="card__bookmark"]');
-  //bookmarks.addEventListener("click", bookmarkChange);
-  //button.addEventListener("click", showAndHideAnswers);
-  mainElement.append(newCard);
+  questionContainer.append(newCard);
 });
-/* }
-createCard(); */
 
 // Minlength display
 
