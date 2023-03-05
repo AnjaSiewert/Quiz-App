@@ -16,7 +16,7 @@ export const cards = [
   },
   {
     question: "Wer hat an der Uhr gedreht?",
-    answer: "Ist es wirklich shcon so spät?",
+    answer: "Ist es wirklich schon so spät?",
     tag: "#paulchen",
   },
 ];
