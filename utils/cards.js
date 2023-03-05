@@ -1,7 +1,7 @@
 export const cards = [
   {
     question: "Who let the dogs out?",
-    answer: "Who who who who?",
+    answer: "Who Who Who Who?",
     tag: "#dog",
   },
   {
