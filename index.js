@@ -1,3 +1,10 @@
-import { toggleButton } from "./components/ToggleButton/ToggleButton.js";
+import { CardList } from "./components/CardList/CardList.js";
+//import { toggleButton } from "./components/ToggleButton/ToggleButton.js";
 
-toggleButton();
+function render() {
+  const container = document.querySelector(".container");
+  container.append(CardList());
+}
+render();
+
+//toggleButton();

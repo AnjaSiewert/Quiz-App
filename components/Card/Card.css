@@ -79,5 +79,5 @@
 }
 
 .card__answer--active {
-  display: none;
+  display: block;
 }

@@ -1,5 +1,4 @@
-/*Missing: 
-- Functionalty on new Card*/
+import { bookmarkChange, showAndHideAnswers } from "../Card/Card.js";
 
 console.clear();
 
@@ -11,6 +10,7 @@ const answerInput = document.querySelector('[data-js="textarea-answer"]');
 const answerLength = document.querySelector('[data-js="answerlength"]');
 
 //Create new card
+/* function createCard() { */
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   const formData = new FormData(event.target);
@@ -32,8 +32,13 @@ form.addEventListener("submit", (event) => {
   `;
   form.reset();
   questionInput.focus();
+  //const bookmarks = document.querySelectorAll('[data-js="card__bookmark"]');
+  //bookmarks.addEventListener("click", bookmarkChange);
+  //button.addEventListener("click", showAndHideAnswers);
   mainElement.append(newCard);
 });
+/* }
+createCard(); */
 
 // Minlength display
 
