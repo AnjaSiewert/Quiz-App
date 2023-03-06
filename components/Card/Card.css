@@ -1,13 +1,12 @@
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   border: 0.35rem solid var(--black);
   height: 12rem;
   width: 18rem;
-  margin-top: 2%;
-  margin-bottom: 10%;
+  margin-top: 1rem;
   background-color: var(--bg-card);
   border-radius: 51px;
   filter: drop-shadow(1vw 1vw 2vw var(--turquoise));
@@ -39,8 +38,6 @@
 
 .card__hashtagList {
   align-self: flex-start;
-  bottom: 0;
-  left: -1.5rem;
   display: flex;
   gap: 1px;
 }
@@ -50,7 +47,7 @@
   background-color: var(--lightgreen);
   border-radius: 4px;
   font-size: 0.7rem;
-  width: 4rem;
+  width: 4.4rem;
 }
 
 .card__button {
@@ -60,17 +57,15 @@
   height: 30px;
   font-weight: bold;
   font-size: 0.8rem;
-  top: -3rem;
   cursor: pointer;
   transition: 0.4 linear;
 }
 
 .card__button:hover {
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 
 .card__answer {
-  top: -50px;
   text-align: center;
 }
 

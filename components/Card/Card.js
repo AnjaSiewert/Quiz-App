@@ -13,9 +13,6 @@ export function Card(props) {
   bookmark.setAttribute("viewbox", "0 0 24 24");
   bookmark.setAttribute("height", "64px");
   bookmark.setAttribute("width", "64px");
-  bookmark.innerHTML = `<path
-d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
-/>`;
   const path = document.createElement("path");
   path.setAttribute(
     "d",
@@ -48,15 +45,15 @@ d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
 
   const listElement1 = document.createElement("li");
   listElement1.classList.add("card__hashtag");
-  listElement1.textContent = props.tag;
+  listElement1.textContent = props.tag[0];
 
   const listElement2 = document.createElement("li");
   listElement2.classList.add("card__hashtag");
-  listElement2.textContent = props.tag;
+  listElement2.textContent = props.tag[1];
 
   const listElement3 = document.createElement("li");
   listElement3.classList.add("card__hashtag");
-  listElement3.textContent = props.tag;
+  listElement3.textContent = props.tag[2];
 
   card.append(question, bookmark, answerButton, answer, list);
   list.append(listElement1, listElement2, listElement3);
@@ -65,8 +62,8 @@ d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
 
 //Bookmark click fill change
 
-/* export function bookmarkChange() {
-  const bookmarks = document.querySelectorAll('[data-js="card__bookmark"]');
+export function bookmarkChange() {
+  const bookmarks = document.querySelectorAll(".card__bookmark");
   console.log(bookmarks);
   bookmarks.forEach((bookmark) => {
     bookmark.addEventListener("click", () => {
@@ -74,4 +71,4 @@ d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
     });
   });
 }
-bookmarkChange(); */
+bookmarkChange();
