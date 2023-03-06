@@ -50,8 +50,16 @@ d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
   listElement1.classList.add("card__hashtag");
   listElement1.textContent = props.tag;
 
-  card.append(question, bookmark, answerButton, answer, list, listElement1);
+  const listElement2 = document.createElement("li");
+  listElement2.classList.add("card__hashtag");
+  listElement2.textContent = props.tag;
 
+  const listElement3 = document.createElement("li");
+  listElement3.classList.add("card__hashtag");
+  listElement3.textContent = props.tag;
+
+  card.append(question, bookmark, answerButton, answer, list);
+  list.append(listElement1, listElement2, listElement3);
   return card;
 }
 
