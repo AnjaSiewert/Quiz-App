@@ -7,6 +7,7 @@
   height: 12rem;
   width: 18rem;
   margin-top: 2%;
+  margin-bottom: 10%;
   background-color: var(--bg-card);
   border-radius: 51px;
   filter: drop-shadow(1vw 1vw 2vw var(--turquoise));
@@ -52,11 +53,6 @@
   width: 4rem;
 }
 
-.card--html,
-.card--css {
-  width: 3rem;
-}
-
 .card__button {
   border-radius: 9px;
   background-color: var(--turquoise);
@@ -79,5 +75,5 @@
 }
 
 .card__answer--active {
-  display: none;
+  display: block;
 }
